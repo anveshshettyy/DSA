@@ -8,20 +8,6 @@ class Solution {
         //     }
         // }
         // return false;
-        
-        // long n = 1000000000;
-        // long[] hash = long[n];
-        // for(int i=0; i<nums.length;  i++) {
-        //     if(nums[i] < 0) {
-        //         hash[n + nums[i]]++;
-        //     } else {
-        //         hash[nums[i]]++;
-        //     }
-        //     if(hash[nums[i]] != 0) {
-        //         return true;
-        //     }
-        // }
-        // return false;
 
         // Arrays.sort(nums);
         // for(int i=1; i<nums.length; i++) {
@@ -29,16 +15,11 @@ class Solution {
         // }
         // return false;
 
+
         HashSet <Integer> hash = new HashSet<>();
-
-        // for(int num:nums) {
-        //     if(hash.contains(num)) return true;
-        //     hash.add(num);
-        // }
-
-        for(int i=0; i<nums.length; i++) {
-            if(hash.contains(nums[i])) return true;
-            hash.add(nums[i]);
+        for(int num:nums) {
+            if(hash.contains(num)) return true;
+            hash.add(num);
         }
         return false;
     } 
